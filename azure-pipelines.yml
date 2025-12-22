@@ -1,0 +1,12 @@
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- script: |
+    echo "Running on self-hosted agent"
+    echo "Machine name:"
+    hostname
+  displayName: 'Self-hosted agent smoke test'
